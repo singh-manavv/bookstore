@@ -1,0 +1,233 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+
+    <!--====== Title ======-->
+    <title>Home | ClassiFied</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/png">
+
+    <!--====== Nice Select CSS ======-->
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+
+    <!--====== Font Awesome CSS ======-->
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="{% static 'css/default.css' %}">
+
+    {% comment %} <link rel="stylesheet" href="{% static 'css/solid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/regular.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome.min.css' %}"> {% endcomment %}
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body class="gray-bg">
+
+    <!--====== HEADER PART START ======-->
+
+    <header class="header_area">
+
+        <div class="header_navbar">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="{% url 'upload_book'%}">
+                        <img src="{% static 'images/logo.png' %}" alt="logo">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="fasse" aria-label="Toggle navigation">
+                        <span class="toggler-icon"></span>
+                        <span class="toggler-icon"></span>
+                        <span class="toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto">
+                            <li><a href="{% url "managebooks" %}">Manage Book <span class="line"></span></a></li>
+                            <li>
+                                <a class="active" href="{% url 'upload_book' %}">Add Book<span class="line"></span></a>
+                            </li>
+
+                            <li><a href="#">Get Help <span class="line"></span></a></li>
+                           
+                        </ul>
+                    </div>
+
+                    <div class="navbar_btn">
+                        
+                        <div class="dropcustomized">
+                            <button class="dropbtn">My Account </button>
+                            <div class="dropcustomized-content priceclass">
+                                <ul>
+                                    <a href="dashboard.html"  style="padding-left:10px"><i class="fas fa-cogs"></i> Dashboard</a>
+                                    <a href="profile-settings.html"  style="padding-left:10px"><i class="fas fa-cog"></i> Profile
+                                            Settings</a>
+                                    <a href="my-ads.html"  style="padding-left:10px"><i class="fas fa-layer-group"></i> My Ads</a>
+                                    <a href="offermessages.html"  style="padding-left:10px"><i class="fas fa-envelope"></i>
+                                            Offers/Messages</a>
+                                    <a href="payments.html"  style="padding-left:10px"><i class="fas fa-wallet"></i> Payments</a>
+                                    <a href="favourite-ads.html"  style="padding-left:10px"><i class="fas fa-heart"></i> My
+                                            Favourites</a>
+                                    <a href="privacy-setting.html"  style="padding-left:10px"><i class="fas fa-star"></i> Privacy
+                                            Settings</a>
+                                    {% if request.session.email %}
+
+                                    <a href="{% url 'signout' %}"><img src = "{% static "images/icon/right-from-bracket.svg" %} " style="margin-left:12px;margin-right:10px" width="15px"></img>Sign Out</a>
+
+
+                                    {% else %}
+                                    
+                                    <a href="{% url 'signin' %}" ><img src = "{% static "images/icon/right-to-bracket.svg" %} " style="margin-left:12px;margin-right:10px" width="15px"></img>Sign In</a>
+                                    <a href="{% url 'signup' %}" ><img src = "{% static "images/icon/right-to-bracket.svg" %} " style="margin-left:12px;margin-right:10px" width="15px"></img>Sign Up</a>
+
+                                    {% endif %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+        </head>
+    </header>
+    <!--====== FOOTER PART START ======-->
+    {% block content %}
+    {% endblock %}
+    <footer class="footer_area">
+        <div class="footer_widget pt-70 pb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer_link mt-45">
+                            <h5 class="footer_title">Company</h5>
+                            <ul class="link">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Our Factories</a></li>
+                                <li><a href="#">Mission and Strategy</a></li>
+                                <li><a href="#">Profitable Actions</a></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer_link mt-45">
+                            <h5 class="footer_title">How to Sell Fast</h5>
+                            <ul class="link">
+                                <li><a href="#">Selling Tips</a></li>
+                                <li><a href="#">Buy and Sell Quickly</a></li>
+                                <li><a href="#">Membership</a></li>
+                                <li><a href="#">Banner Advertising</a></li>
+                                <li><a href="#">Promote Your Ad</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer_link mt-45">
+                            <h5 class="footer_title">Information</h5>
+                            <ul class="link">
+                                <li><a href="#">Company & Contact Info</a></li>
+                                <li><a href="#">Blog & Articles</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer_link mt-45">
+                            <h5 class="footer_title">Help & Support</h5>
+                            <ul class="link">
+                                <li><a href="#">Live Chat</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">How to Stay Safe</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_copyright pt-15 pb-30">
+            <div class="container">
+                <div class="footer_copyright_wrapper text-center d-sm-flex justify-content-between align-items-center">
+                    <div class="copyright mt-15">
+                        <p>Designed and Developed by <a href="https://graygrids.com" rel="nofollow">GrayGrids</a></p>
+                    </div>
+                    <div class="payment mt-15">
+                        <ul>
+                            <li><a href="#"><img src="{% static 'images/icon/payment-method1.jpg' %}" alt="payment"></a>
+                            </li>
+                            <li><a href="#"><img src="{% static 'images/icon/payment-method2.jpg' %}" alt="payment"></a>
+                            </li>
+                            <li><a href="#"><img src="{% static 'images/icon/payment-method3.jpg' %}" alt="payment"></a>
+                            </li>
+                            <li><a href="#"><img src="{% static 'images/icon/payment-method4.jpg' %}" alt="payment"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <!--====== Jquery js ======-->
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'js/vendor/modernizr-3.7.1.min.js' %}"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <!--====== Slick js ======-->
+    <script src="{% static 'js/slick.min.js' %}"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+
+    <!--====== Nice Select js ======-->
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+
+    <!--====== Counter Up js ======-->
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+
+    <!--====== Price Range js ======-->
+    <script src="{% static 'js/ion.rangeSlider.min.js' %}"></script>
+
+    <!--====== Ajax Contact js ======-->
+    <script src="{% static 'js/ajax-contact.js' %}"></script>
+
+    <!--====== Main js ======-->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+
+
+</html>

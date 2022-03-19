@@ -1,0 +1,937 @@
+{% extends 'buyer_header.html' %}
+{% load static %}
+{% block content %}
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+        <div class="header_content bg_cover" style="background-image: url('static/images/hero.jpg')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="content_wrapper">
+                            <h3 class="title">You're Using Free Version of ClassiFied</h3>
+                            <p>Please, purchase full version of the template to get all pages, features and permission to use in commercial projects.</p>
+                            <ul class="header_btn">
+                                <li><a class="main-btn" href="https://rebrand.ly/classified-gg" rel="nofollow">Purchase Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_search">
+                    <form action="#">
+                        <div class="search_wrapper d-flex flex-wrap">
+                            <div class="search_column d-flex flex-wrap">
+                                <div class="search_select mt-15">
+                                    <select>
+                                        <option value="0">Select a Location</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                    <i class="far fa-map"></i>
+                                </div>
+                                <div class="search_select mt-15">
+                                    <select>
+                                        <option value="0">Select Category</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                    <i class="fas fa-tag"></i>
+                                </div>
+                            </div>
+                            <div class="search_column d-flex flex-wrap">
+                                <div class="search_form mt-15">
+                                    <input type="text" placeholder="Type Your Keyword">
+                                </div>
+                                <div class="search_btn mt-15">
+                                    <button class="main-btn">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="header_keyword d-sm-flex">
+                        <span class="title">Trending Keywords:</span>
+                        <ul class="tags media-body">
+                            <li><a href="#">Camera</a></li>
+                            <li><a href="#">Mobile</a></li>
+                            <li><a href="#">DSLR</a></li>
+                            <li><a href="#">Packet</a></li>
+                            <li><a href="#">Dress</a></li>
+                            <li><a href="#">Shirt</a></li>
+                            <li><a href="#">Pant</a></li>
+                            <li><a href="#">Shoe</a></li>
+                            <li><a href="#">Table</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</head>
+    <!--====== HEADER PART ENDS ======--
+
+    <!--====== ADS PART START ======-->
+
+    <section class="ads_area pt-70 pb-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ads_tabs d-sm-flex align-items-end justify-content-between pb-30">
+                        <div class="section_title mt-45">
+                            <h3 class="title">Popular <br> and Featured Ads</h3>
+                        </div>
+                        <div class="tabs_menu mt-50">
+                            <ul class="nav" id="myTab" role="tablist">
+                                <li>
+                                    <a class="active" id="popular-tab" data-toggle="tab" href="#popular" role="tab" aria-controls="popular" aria-selected="true">Popular Ads</a>
+                                </li>
+                                <li>
+                                    <a id="featured-tab" data-toggle="tab" href="#featured" role="tab" aria-controls="featured" aria-selected="fasse">Featured Ads</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ads_tabs">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="popular" role="tabpanel" aria-labelledby="popular-tab">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single_ads_card mt-30">
+                                    <div class="ads_card_image">
+                                        <img src="static/images/ads-1.png" alt="ads">
+                                    </div>
+                                    <div class="ads_card_content">
+                                        <div class="meta d-flex justify-content-between">
+                                            <p>Gadgets</p>
+                                            <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                        <h4 class="title"><a href="product-details.html">Nikon Camera</a></h4>
+                                        <p><i class="far fa-map"></i>New York, USA</p>
+                                        <div class="ads_price_date d-flex justify-content-between">
+                                            <span class="price">$129.00</span>
+                                            <span class="date">25 Jan, 2023</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single_ads_card mt-30">
+                                    <div class="ads_card_image">
+                                        <img src="static/images/ads-2.png" alt="ads">
+                                        <p class="sticker">Featured</p>
+                                    </div>
+                                    <div class="ads_card_content">
+                                        <div class="meta d-flex justify-content-between">
+                                            <p>Camera</p>
+                                            <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                        <h4 class="title"><a href="product-details.html">Fresh Digital Camera</a></h4>
+                                        <p><i class="far fa-map"></i>New York, USA</p>
+                                        <div class="ads_price_date d-flex justify-content-between">
+                                            <span class="price">$99.00</span>
+                                            <span class="date">12 Jan, 2023</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single_ads_card mt-30">
+                                    <div class="ads_card_image">
+                                        <img src="static/images/ads-3.png" alt="ads">
+                                    </div>
+                                    <div class="ads_card_content">
+                                        <div class="meta d-flex justify-content-between">
+                                            <p>Mobile</p>
+                                            <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                        <h4 class="title"><a href="product-details.html">Samsung Glalaxy S8</a></h4>
+                                        <p><i class="far fa-map"></i>New York, USA</p>
+                                        <div class="ads_price_date d-flex justify-content-between">
+                                            <span class="price">$299.00</span>
+                                            <span class="date">25 Jan, 2023</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single_ads_card mt-30">
+                                    <div class="ads_card_image">
+                                        <img src="static/images/ads-4.png" alt="ads">
+                                        <p class="sticker">Featured</p>
+                                    </div>
+                                    <div class="ads_card_content">
+                                        <div class="meta d-flex justify-content-between">
+                                            <p>Mobile</p>
+                                            <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                        <h4 class="title"><a href="product-details.html">iPhone X Fresh</a></h4>
+                                        <p><i class="far fa-map"></i>Delaware, USA</p>
+                                        <div class="ads_price_date d-flex justify-content-between">
+                                            <span class="price">$234.00</span>
+                                            <span class="date">10 Jun, 2023</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single_ads_card mt-30">
+                                    <div class="ads_card_image">
+                                        <img src="static/images/ads-5.png" alt="ads">
+                                    </div>
+                                    <div class="ads_card_content">
+                                        <div class="meta d-flex justify-content-between">
+                                            <p>Vehicle</p>
+                                            <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                        <h4 class="title"><a href="product-details.html">High-performance Bi-Cycle</a></h4>
+                                        <p><i class="far fa-map"></i>New York, USA</p>
+                                        <div class="ads_price_date d-flex justify-content-between">
+                                            <span class="price">$299.00</span>
+                                            <span class="date">25 Jun, 2023</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single_ads_card mt-30">
+                                    <div class="ads_card_image">
+                                        <img src="static/images/ads-6.png" alt="ads">
+                                    </div>
+                                    <div class="ads_card_content">
+                                        <div class="meta d-flex justify-content-between">
+                                            <p>Vehicle</p>
+                                            <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                        <h4 class="title"><a href="product-details.html">KTM 800CC Bike</a></h4>
+                                        <p><i class="far fa-map"></i>New York, USA</p>
+                                        <div class="ads_price_date d-flex justify-content-between">
+                                            <span class="price">$2399.00</span>
+                                            <span class="date">25 Apr, 2023</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single_ads_card mt-30">
+                                    <div class="ads_card_image">
+                                        <img src="static/images/ads-7.png" alt="ads">
+                                    </div>
+                                    <div class="ads_card_content">
+                                        <div class="meta d-flex justify-content-between">
+                                            <p>Computers</p>
+                                            <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                        <h4 class="title"><a href="product-details.html">MacBook Pro - 8 GB / 256GB</a></h4>
+                                        <p><i class="far fa-map"></i>New York, USA</p>
+                                        <div class="ads_price_date d-flex justify-content-between">
+                                            <span class="price">$129.00</span>
+                                            <span class="date">25 Dec, 2023</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single_ads_card mt-30">
+                                    <div class="ads_card_image">
+                                        <img src="static/images/ads-8.png" alt="ads">
+                                        <p class="sticker">Featured</p>
+                                    </div>
+                                    <div class="ads_card_content">
+                                        <div class="meta d-flex justify-content-between">
+                                            <p>Camera</p>
+                                            <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                        <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
+                                        <p><i class="far fa-map"></i>New York, USA</p>
+                                        <div class="ads_price_date d-flex justify-content-between">
+                                            <span class="price">$299.00</span>
+                                            <span class="date">25 Jan, 2023</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="featured" role="tabpanel" aria-labelledby="featured-tab">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single_ads_card mt-30">
+                                    <div class="ads_card_image">
+                                        <img src="static/images/ads-1.png" alt="ads">
+                                        <p class="sticker">Featured</p>
+                                    </div>
+                                    <div class="ads_card_content">
+                                        <div class="meta d-flex justify-content-between">
+                                            <p>Ram & Laptop</p>
+                                            <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                        <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
+                                        <p><i class="far fa-map"></i>New York, USA</p>
+                                        <div class="ads_price_date d-flex justify-content-between">
+                                            <span class="price">$299.00</span>
+                                            <span class="date">25 Jan, 2023</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single_ads_card mt-30">
+                                    <div class="ads_card_image">
+                                        <img src="static/images/ads-2.png" alt="ads">
+                                        <p class="sticker">Featured</p>
+                                    </div>
+                                    <div class="ads_card_content">
+                                        <div class="meta d-flex justify-content-between">
+                                            <p>Ram & Laptop</p>
+                                            <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                        <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
+                                        <p><i class="far fa-map"></i>New York, USA</p>
+                                        <div class="ads_price_date d-flex justify-content-between">
+                                            <span class="price">$299.00</span>
+                                            <span class="date">25 Jan, 2023</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single_ads_card mt-30">
+                                    <div class="ads_card_image">
+                                        <img src="static/images/ads-3.png" alt="ads">
+                                        <p class="sticker">Featured</p>
+                                    </div>
+                                    <div class="ads_card_content">
+                                        <div class="meta d-flex justify-content-between">
+                                            <p>Ram & Laptop</p>
+                                            <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                        <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
+                                        <p><i class="far fa-map"></i>New York, USA</p>
+                                        <div class="ads_price_date d-flex justify-content-between">
+                                            <span class="price">$299.00</span>
+                                            <span class="date">25 Jan, 2023</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single_ads_card mt-30">
+                                    <div class="ads_card_image">
+                                        <img src="static/images/ads-4.png" alt="ads">
+                                        <p class="sticker">Featured</p>
+                                    </div>
+                                    <div class="ads_card_content">
+                                        <div class="meta d-flex justify-content-between">
+                                            <p>Ram & Laptop</p>
+                                            <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                        <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
+                                        <p><i class="far fa-map"></i>New York, USA</p>
+                                        <div class="ads_price_date d-flex justify-content-between">
+                                            <span class="price">$299.00</span>
+                                            <span class="date">25 Jan, 2023</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single_ads_card mt-30">
+                                    <div class="ads_card_image">
+                                        <img src="static/images/ads-5.png" alt="ads">
+                                        <p class="sticker">Featured</p>
+                                    </div>
+                                    <div class="ads_card_content">
+                                        <div class="meta d-flex justify-content-between">
+                                            <p>Ram & Laptop</p>
+                                            <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                        <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
+                                        <p><i class="far fa-map"></i>New York, USA</p>
+                                        <div class="ads_price_date d-flex justify-content-between">
+                                            <span class="price">$299.00</span>
+                                            <span class="date">25 Jan, 2023</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single_ads_card mt-30">
+                                    <div class="ads_card_image">
+                                        <img src="static/images/ads-6.png" alt="ads">
+                                        <p class="sticker">Featured</p>
+                                    </div>
+                                    <div class="ads_card_content">
+                                        <div class="meta d-flex justify-content-between">
+                                            <p>Ram & Laptop</p>
+                                            <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                        <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
+                                        <p><i class="far fa-map"></i>New York, USA</p>
+                                        <div class="ads_price_date d-flex justify-content-between">
+                                            <span class="price">$299.00</span>
+                                            <span class="date">25 Jan, 2023</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single_ads_card mt-30">
+                                    <div class="ads_card_image">
+                                        <img src="static/images/ads-7.png" alt="ads">
+                                        <p class="sticker">Featured</p>
+                                    </div>
+                                    <div class="ads_card_content">
+                                        <div class="meta d-flex justify-content-between">
+                                            <p>Ram & Laptop</p>
+                                            <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                        <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
+                                        <p><i class="far fa-map"></i>New York, USA</p>
+                                        <div class="ads_price_date d-flex justify-content-between">
+                                            <span class="price">$299.00</span>
+                                            <span class="date">25 Jan, 2023</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single_ads_card mt-30">
+                                    <div class="ads_card_image">
+                                        <img src="static/images/ads-8.png" alt="ads">
+                                        <p class="sticker">Featured</p>
+                                    </div>
+                                    <div class="ads_card_content">
+                                        <div class="meta d-flex justify-content-between">
+                                            <p>Ram & Laptop</p>
+                                            <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                        <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
+                                        <p><i class="far fa-map"></i>New York, USA</p>
+                                        <div class="ads_price_date d-flex justify-content-between">
+                                            <span class="price">$299.00</span>
+                                            <span class="date">25 Jan, 2023</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== ADS PART ENDS ======-->
+
+    <!--====== CHOOSE PART START ======-->
+
+    <section class="choose_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="choose_content pt-35">
+                        <div class="section_title pb-20">
+                            <h3 class="title">Why Choose Us</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.</p>
+
+                        <ul class="list">
+                            <li><i class="fa fa-check"></i> Powerful feature one.</li>
+                            <li><i class="fa fa-check"></i> Much needed and important feature two.</li>
+                            <li><i class="fa fa-check"></i> Essential features to rock.</li>
+                        </ul>
+                        <a href="#" class="main-btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="choose_image">
+            <div class="image">
+                <img src="static/images/choose.png" alt="choose">
+            </div>
+        </div>
+    </section>
+
+    <!--====== CHOOSE PART ENDS ======-->
+
+    <!--====== LOCATIONS PART START ======-->
+
+    <section class="locations_area pt-115 pb-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section_title pb-15">
+                        <h3 class="title">Explore <br> The Locations</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="locations_wrapper">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-7 col-sm-8">
+                        <div class="single_locations mt-30">
+                            <div class="locations_image">
+                                <img src="static/images/locations-1.jpg" alt="Locations">
+                            </div>
+                            <div class="locations_content">
+                                <h5 class="title"><a href="product.html"><i class="far fa-map"></i>Los Angeles</a></h5>
+                                <p>25 ads posted in this location</p>
+                                <a class="view" href="product.html">View All Ads Here <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-7 col-sm-8">
+                        <div class="single_locations mt-30">
+                            <div class="locations_image">
+                                <img src="static/images/locations-2.jpg" alt="Locations">
+                            </div>
+                            <div class="locations_content">
+                                <h5 class="title"><a href="product.html"><i class="far fa-map"></i>California</a></h5>
+                                <p>7 ads posted in this location</p>
+                                <a class="view" href="product.html">View All Ads Here <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-7 col-sm-8">
+                        <div class="single_locations mt-30">
+                            <div class="locations_image">
+                                <img src="static/images/locations-3.jpg" alt="Locations">
+                            </div>
+                            <div class="locations_content">
+                                <h5 class="title"><a href="product.html"><i class="far fa-map"></i>New York</a></h5>
+                                <p>3 ads posted in this location</p>
+                                <a class="view" href="product.html">View All Ads Here <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="locations_btn text-center">
+                    <a class="main-btn" href="#">View all Locations</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== LOCATIONS PART ENDS ======-->
+
+    <!--====== COUNETR PART START ======-->
+
+    <section class="counter_area bg_cover" style="background-image: url(static/images/counter-bg.jpg)">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-lg-9">
+                    <div class="counter_wrapper d-flex flex-wrap justify-content-between">
+                        <div class="single_counter">
+                            <div class="counter_items d-flex">
+                                <div class="counter_icon">
+                                    <img src="static/images/icon/counter-1.svg" alt="counter">
+                                </div>
+                                <div class="counter_count media-body">
+                                    <span class="count"><span class="counter">5000</span>+</span>
+                                </div>
+                            </div>
+                            <p>Published Ads Here</p>
+                        </div>
+                        <div class="single_counter">
+                            <div class="counter_items d-flex">
+                                <div class="counter_icon">
+                                    <img src="static/images/icon/counter-2.svg" alt="counter">
+                                </div>
+                                <div class="counter_count media-body">
+                                    <span class="count"><span class="counter">300</span>+</span>
+                                </div>
+                            </div>
+                            <p>Register User Using</p>
+                        </div>
+                        <div class="single_counter">
+                            <div class="counter_items d-flex">
+                                <div class="counter_icon">
+                                    <img src="static/images/icon/counter-3.svg" alt="counter">
+                                </div>
+                                <div class="counter_count media-body">
+                                    <span class="count"><span class="counter">200</span>+</span>
+                                </div>
+                            </div>
+                            <p>Verified User Using</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== COUNETR PART ENDS ======-->
+
+    <!--====== PUBLISHED PART START ======-->
+
+    <section class="published_area pt-115">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section_title pb-15">
+                        <h3 class="title">Recently <br> Published Ads</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="published_wrapper">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single_ads_card mt-30">
+                            <div class="ads_card_image">
+                                <img src="static/images/ads-1.png" alt="ads">
+                            </div>
+                            <div class="ads_card_content">
+                                <div class="meta d-flex justify-content-between">
+                                    <p>Ram & Laptop</p>
+                                    <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                </div>
+                                <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
+                                <p><i class="far fa-map"></i>New York, USA</p>
+                                <div class="ads_price_date d-flex justify-content-between">
+                                    <span class="price">$299.00</span>
+                                    <span class="date">25 Jan, 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single_ads_card mt-30">
+                            <div class="ads_card_image">
+                                <img src="static/images/ads-2.png" alt="ads">
+                                <p class="sticker sticker_color-1">New</p>
+                            </div>
+                            <div class="ads_card_content">
+                                <div class="meta d-flex justify-content-between">
+                                    <p>Ram & Laptop</p>
+                                    <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                </div>
+                                <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
+                                <p><i class="far fa-map"></i>New York, USA</p>
+                                <div class="ads_price_date d-flex justify-content-between">
+                                    <span class="price">$299.00</span>
+                                    <span class="date">25 Jan, 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single_ads_card mt-30">
+                            <div class="ads_card_image">
+                                <img src="static/images/ads-3.png" alt="ads">
+                            </div>
+                            <div class="ads_card_content">
+                                <div class="meta d-flex justify-content-between">
+                                    <p>Ram & Laptop</p>
+                                    <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                </div>
+                                <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
+                                <p><i class="far fa-map"></i>New York, USA</p>
+                                <div class="ads_price_date d-flex justify-content-between">
+                                    <span class="price">$299.00</span>
+                                    <span class="date">25 Jan, 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single_ads_card mt-30">
+                            <div class="ads_card_image">
+                                <img src="static/images/ads-4.png" alt="ads">
+                            </div>
+                            <div class="ads_card_content">
+                                <div class="meta d-flex justify-content-between">
+                                    <p>Ram & Laptop</p>
+                                    <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                </div>
+                                <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
+                                <p><i class="far fa-map"></i>New York, USA</p>
+                                <div class="ads_price_date d-flex justify-content-between">
+                                    <span class="price">$299.00</span>
+                                    <span class="date">25 Jan, 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single_ads_card mt-30">
+                            <div class="ads_card_image">
+                                <img src="{% static 'images/ads-5.png' %}" alt="ads">
+                            </div>
+                            <div class="ads_card_content">
+                                <div class="meta d-flex justify-content-between">
+                                    <p>Ram & Laptop</p>
+                                    <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                </div>
+                                <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
+                                <p><i class="far fa-map"></i>New York, USA</p>
+                                <div class="ads_price_date d-flex justify-content-between">
+                                    <span class="price">$299.00</span>
+                                    <span class="date">25 Jan, 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single_ads_card mt-30">
+                            <div class="ads_card_image">
+                                <img src="{% static 'images/ads-6.png' %}" alt="ads">
+                            </div>
+                            <div class="ads_card_content">
+                                <div class="meta d-flex justify-content-between">
+                                    <p>Ram & Laptop</p>
+                                    <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                </div>
+                                <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
+                                <p><i class="far fa-map"></i>New York, USA</p>
+                                <div class="ads_price_date d-flex justify-content-between">
+                                    <span class="price">$299.00</span>
+                                    <span class="date">25 Jan, 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single_ads_card mt-30">
+                            <div class="ads_card_image">
+                                <img src="{% static 'images/ads-7.png' %}" alt="ads">
+                                <p class="sticker sticker_color-2">Popular</p>
+                            </div>
+                            <div class="ads_card_content">
+                                <div class="meta d-flex justify-content-between">
+                                    <p>Ram & Laptop</p>
+                                    <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                </div>
+                                <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
+                                <p><i class="far fa-map"></i>New York, USA</p>
+                                <div class="ads_price_date d-flex justify-content-between">
+                                    <span class="price">$299.00</span>
+                                    <span class="date">25 Jan, 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single_ads_card mt-30">
+                            <div class="ads_card_image">
+                                <img src="static/images/ads-8.png" alt="ads">
+                            </div>
+                            <div class="ads_card_content">
+                                <div class="meta d-flex justify-content-between">
+                                    <p>Ram & Laptop</p>
+                                    <a class="like" href="#"><i class="fas fa-heart"></i></a>
+                                </div>
+                                <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
+                                <p><i class="far fa-map"></i>New York, USA</p>
+                                <div class="ads_price_date d-flex justify-content-between">
+                                    <span class="price">$299.00</span>
+                                    <span class="date">25 Jan, 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="published_btn">
+                    <a href="product.html" class="main-btn">View all Ads</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== PUBLISHED PART ENDS ======-->
+
+    <!--====== SERVICES PART START ======-->
+
+    <section class="services_area pt-115">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-15">
+                        <h3 class="title">ClassiFied <br> Here for You</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_services d-flex mt-30">
+                        <div class="services_icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="services_content media-body">
+                            <h4 class="title"><a href="#">Sell Your Item Safely</a></h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</p>
+                            <a class="more" href="#">Read More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_services d-flex mt-30">
+                        <div class="services_icon">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <div class="services_content media-body">
+                            <h4 class="title"><a href="#">Buy Directly</a></h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</p>
+                            <a class="more" href="#">Read More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_services d-flex mt-30">
+                        <div class="services_icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="services_content media-body">
+                            <h4 class="title"><a href="#">Friendly Platform</a></h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</p>
+                            <a class="more" href="#">Read More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_services d-flex mt-30">
+                        <div class="services_icon">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <div class="services_content media-body">
+                            <h4 class="title"><a href="#">Pay in Person</a></h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</p>
+                            <a class="more" href="#">Read More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_services d-flex mt-30">
+                        <div class="services_icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="services_content media-body">
+                            <h4 class="title"><a href="#">24/7 Support</a></h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</p>
+                            <a class="more" href="#">Read More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_services d-flex mt-30">
+                        <div class="services_icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="services_content media-body">
+                            <h4 class="title"><a href="#">Verified Users</a></h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</p>
+                            <a class="more" href="#">Read More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== SERVICES PART ENDS ======-->
+
+    <!--====== PRICING PART START ======-->
+
+    <section class="pricing_area pt-115">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-15">
+                        <h3 class="title">Find a Plan <br> That's Right For You</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters align-items-center justify-content-center">
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="single_pricing text-center">
+                        <div class="pricing_icon">
+                            <img src="{% static 'images/icon/pricing-1.svg' %}" alt="Icon">
+                        </div>
+                        <div class="pricing_title">
+                            <h4 class="title">Beginers</h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur.</p>
+                        </div>
+                        <div class="pricing_content">
+                            <p>Lorem ipsum dolor. Sit amet, consetetur dost. sadipscing elitr, sed. Diam nonumy eirmod. Tempor invidunt ut labore. Pet dolore magna. Aliquyam erat iamvoluptua.</p>
+                            <span class="price">$0.00</span>
+                        </div>
+                        <div class="pricing_btn">
+                            <a href="#" class="main-btn">View all Ads</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="single_pricing pricing_active text-center">
+                        <div class="pricing_icon">
+                            <img src="{% static 'images/icon/pricing-2.svg' %}" alt="Icon">
+                        </div>
+                        <div class="pricing_title">
+                            <h4 class="title">Standard</h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur.</p>
+                        </div>
+                        <div class="pricing_content">
+                            <p>Lorem ipsum dolor. Sit amet, consetetur dost. sadipscing elitr, sed. Diam nonumy eirmod. Tempor invidunt ut labore. Pet dolore magna. Aliquyam erat iamvoluptua.</p>
+                            <span class="price">$0.00</span>
+                        </div>
+                        <div class="pricing_btn">
+                            <a href="#" class="main-btn main-btn-2">View all Ads</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="single_pricing text-center">
+                        <div class="pricing_icon">
+                            <img src="{% static 'images/icon/pricing-3.svg' %}" alt="Icon">
+                        </div>
+                        <div class="pricing_title">
+                            <h4 class="title">Premium</h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur.</p>
+                        </div>
+                        <div class="pricing_content">
+                            <p>Lorem ipsum dolor. Sit amet, consetetur dost. sadipscing elitr, sed. Diam nonumy eirmod. Tempor invidunt ut labore. Pet dolore magna. Aliquyam erat iamvoluptua.</p>
+                            <span class="price">$0.00</span>
+                        </div>
+                        <div class="pricing_btn">
+                            <a href="#" class="main-btn">View all Ads</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== PRICING PART ENDS ======-->
+
+
+    <!--====== CALL TO ACTION PART START ======-->
+
+    <section class="call_to_action_area pt-20 pb-70">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="call_to_action_content mt-45">
+                        <h4 class="title">Subscribe For Update</h4>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="call_to_action_form mt-50">
+                        <form action="#">
+                            <i class="fas fa-envelope"></i>
+                            <input type="text" placeholder="Enter your mail address . . .">
+                            <button class="main-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== CALL TO ACTION PART ENDS ======-->
+
+    
+
+</body>
+
+</html>
+{% endblock %}
