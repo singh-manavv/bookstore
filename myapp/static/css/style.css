@@ -720,25 +720,27 @@ p {
 .priceclass {
   display: flex;
 }
-.choose_file {
-  position: relative;
+.choose_file ::-webkit-file-upload-button {
+  color: white;
   display: inline-block;
-  border-radius: 8px;
-  border: #ebebeb solid 1px;
-  width: 250px;
-  padding: 4px 6px 4px 8px;
-  font: normal 14px Myriad Pro, Verdana, Geneva, sans-serif;
-  color: #7f7f7f;
-  margin-top: 2px;
-  background: white;
+  background: #1c88e0;
+  border: none;
+  margin-top: 7px;
+  margin-left: -22px;
+  padding: 7px 15px;
+  font-weight: 700;
+  border-radius: 3px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 10pt;
 }
-.choose_file input[type="file"] {
+/* .choose_file input[type="file"] {
   -webkit-appearance: none;
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
-}
+} */
 
 .navbar-toggler {
   padding: 0;
@@ -1164,6 +1166,7 @@ p {
   z-index: 1;
 }
 
+
 .dropcustomized-content a {
   margin-left: auto;
   margin-right: auto;
@@ -1171,6 +1174,8 @@ p {
   padding: 0px 0px;
   text-decoration: none;
   display: block;
+  height: 50px;
+  max-height: 50px;
 }
 
 .dropcustomized-content a:hover {background-color: #ddd;}
@@ -1179,14 +1184,14 @@ p {
 
 .dropcustomized:hover .dropbtn {background-color: #fff;}
 .navbar_btn .dropcustomized a {
-  padding: 28px 0;
+  padding: 12px 0;
   color: #222;
   font-size: 16px;
 }
 @media (max-width: 767px) {
   .navbar_btn .dropcustomized a {
     font-size: 14px;
-    padding: 26px 0;
+    padding: 10px 0;
   }
 }
 .navbar_btn .dropdown a.dropdown-toggle {
