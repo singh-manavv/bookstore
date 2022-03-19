@@ -101,7 +101,7 @@ def upload_book(request):
     if request.method == "POST":
         Book.objects.create(
             book_name = request.POST['book_name'],
-            book_image = request.POST['book_image'],
+            book_image = request.FILES['book_image'],
             category_id = request.POST['category_id'],
             book_description = request.POST['book_description'],
             book_price = request.POST['book_price'],

@@ -40,7 +40,7 @@ class Book(models.Model):
     book_seller = models.ForeignKey(User,default=1,on_delete=models.CASCADE)
     bookid = models.AutoField(primary_key=True)
     book_name = models.CharField(max_length=100)
-    book_image = models.ImageField(upload_to='image/')
+    book_image = models.ImageField(upload_to='images/',default="",null=True,blank=True)
     book_description = models.TextField()
     book_price = models.IntegerField()
     publisher = models.CharField(max_length=100)
