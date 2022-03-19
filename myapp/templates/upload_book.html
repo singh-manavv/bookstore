@@ -61,11 +61,11 @@
                         <div class="contact_title">
                             <h5 class="title">Fill Details Here </h5>
                         </div>
-                        
-                       
-                            {% if msg %}
+                        <br>
+                        {% if msg %}
                             {{msg}}
                             {% endif %}
+                        <br>
                             <form action="{% url 'upload_book' %}" method="post">
                             {% comment %} <form id="contact-form" action="{% url 'managebooks'%}" method="post"> {% endcomment %}
                             {% csrf_token %}
@@ -99,7 +99,7 @@
                                             
                                               <div class="choose_file">
                                                 <span>Choose File</span>
-                                                <input name="Select File" type="file" />
+                                                <input name="book_image" type="file" />
                                             </div>
                                         </div> 
                                         

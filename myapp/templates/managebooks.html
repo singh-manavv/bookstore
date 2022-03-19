@@ -17,7 +17,7 @@
     <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/png">
 
     <!--====== Nice Select CSS ======-->
-    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
 
     <!--====== Font Awesome CSS ======-->
     <link rel=" stylesheet" href="{% static 'css/all.min.css' %}">
@@ -38,16 +38,16 @@
 <body class="gray-bg">
 
     <!--====== CONTACT PART START ======-->
-    <div class="page_banner bg_cover" style="background-image: {% static "images/page-banner.jpg" %} ">
-        <div class="container">
-            <div class="page_banner_content">
-                <h3 class="title">Manage Books </h3>
-                <ul class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li>Manage Books</li>
-                </ul>
-            </div>
+    <div class="page_banner bg_cover" style="background-image: {% static " images/page-banner.jpg" %} ">
+        <div class=" container">
+        <div class="page_banner_content">
+            <h3 class="title">Manage Books </h3>
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li>Manage Books</li>
+            </ul>
         </div>
+    </div>
     </div>
 
     <section class="published_area pt-115">
@@ -55,184 +55,45 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section_title pb-15">
-                        <h3 class="title">Recently <br> Published Ads</h3>
+                        <h4 class="title"> My Uploaded Books </h4>
                     </div>
                 </div>
             </div>
-            {% for books in allbooks %}
-            {% comment %} {{ books.book_name}}
-            {{ books.book_description }} {% endcomment %}
-            {% comment %} {{ student.student_number }}
-            {{ student.dob }} {% endcomment %}
-            
+            <br>
+            <form action="{% url 'upload_book' %}" method="get">
+            {% csrf_token %}
             <div class="published_wrapper">
                 <div class="row">
+                    {% for in books %}
                     <div class="col-lg-3 col-sm-6">
                         <div class="single_ads_card mt-30">
                             <div class="ads_card_image">
-                                
-                                
-                                <img src="{{books.book_image.url}}"  width= "40px" alt="ads">
-                                
-                                
-                            </div>
-                            <div class="ads_card_content">
-                                <div class="meta d-flex justify-content-between">
-                                    <p> {{ books.book_name}} </p>
-                                    <a class="like" href="#"><i class="fas fa-heart"></i></a>
-                                </div>
-                                <h4 class="title"><a href="product-details.html">{{ books.book_description }}</a></h4>
-                                <p><i class="far fa-map"></i>New York, USA</p>
-                                <div class="ads_price_date d-flex justify-content-between">
-                                    <span class="price">{{books.book_price}}</span>
-                                    <span class="date">25 Jan, 2023</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single_ads_card mt-30">
-                            <div class="ads_card_image">
-                                <img src="static/images/ads-2.png" alt="ads">
-                                <p class="sticker sticker_color-1">New</p>
+                                <img src="{{ i.book_image }}" alt="ads">
                             </div>
                             <div class="ads_card_content">
                                 <div class="meta d-flex justify-content-between">
                                     <p>Ram & Laptop</p>
                                     <a class="like" href="#"><i class="fas fa-heart"></i></a>
                                 </div>
-                                <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
+                                <h4 class="title"><a href="product-details.html">Bike</a></h4>
                                 <p><i class="far fa-map"></i>New York, USA</p>
                                 <div class="ads_price_date d-flex justify-content-between">
-                                    <span class="price">$299.00</span>
+                                    <span class="price">{{ i.book_price }}</span>
                                     <span class="date">25 Jan, 2023</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single_ads_card mt-30">
-                            <div class="ads_card_image">
-                                <img src="static/images/ads-3.png" alt="ads">
-                            </div>
-                            <div class="ads_card_content">
-                                <div class="meta d-flex justify-content-between">
-                                    <p>Ram & Laptop</p>
-                                    <a class="like" href="#"><i class="fas fa-heart"></i></a>
-                                </div>
-                                <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
-                                <p><i class="far fa-map"></i>New York, USA</p>
-                                <div class="ads_price_date d-flex justify-content-between">
-                                    <span class="price">$299.00</span>
-                                    <span class="date">25 Jan, 2023</span>
-                                </div>
-                            </div>
-                        </div>
+                    {% endfor %}
+
+                    <div class="published_btn">
+                        <a href="product.html" class="main-btn">View all Books</a>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single_ads_card mt-30">
-                            <div class="ads_card_image">
-                                <img src="static/images/ads-4.png" alt="ads">
-                            </div>
-                            <div class="ads_card_content">
-                                <div class="meta d-flex justify-content-between">
-                                    <p>Ram & Laptop</p>
-                                    <a class="like" href="#"><i class="fas fa-heart"></i></a>
-                                </div>
-                                <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
-                                <p><i class="far fa-map"></i>New York, USA</p>
-                                <div class="ads_price_date d-flex justify-content-between">
-                                    <span class="price">$299.00</span>
-                                    <span class="date">25 Jan, 2023</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single_ads_card mt-30">
-                            <div class="ads_card_image">
-                                <img src="{% static 'images/ads-5.png' %}" alt="ads">
-                            </div>
-                            <div class="ads_card_content">
-                                <div class="meta d-flex justify-content-between">
-                                    <p>Ram & Laptop</p>
-                                    <a class="like" href="#"><i class="fas fa-heart"></i></a>
-                                </div>
-                                <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
-                                <p><i class="far fa-map"></i>New York, USA</p>
-                                <div class="ads_price_date d-flex justify-content-between">
-                                    <span class="price">$299.00</span>
-                                    <span class="date">25 Jan, 2023</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single_ads_card mt-30">
-                            <div class="ads_card_image">
-                                <img src="{% static 'images/ads-6.png' %}" alt="ads">
-                            </div>
-                            <div class="ads_card_content">
-                                <div class="meta d-flex justify-content-between">
-                                    <p>Ram & Laptop</p>
-                                    <a class="like" href="#"><i class="fas fa-heart"></i></a>
-                                </div>
-                                <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
-                                <p><i class="far fa-map"></i>New York, USA</p>
-                                <div class="ads_price_date d-flex justify-content-between">
-                                    <span class="price">$299.00</span>
-                                    <span class="date">25 Jan, 2023</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single_ads_card mt-30">
-                            <div class="ads_card_image">
-                                <img src="{% static 'images/ads-7.png' %}" alt="ads">
-                                <p class="sticker sticker_color-2">Popular</p>
-                            </div>
-                            <div class="ads_card_content">
-                                <div class="meta d-flex justify-content-between">
-                                    <p>Ram & Laptop</p>
-                                    <a class="like" href="#"><i class="fas fa-heart"></i></a>
-                                </div>
-                                <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
-                                <p><i class="far fa-map"></i>New York, USA</p>
-                                <div class="ads_price_date d-flex justify-content-between">
-                                    <span class="price">$299.00</span>
-                                    <span class="date">25 Jan, 2023</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single_ads_card mt-30">
-                            <div class="ads_card_image">
-                                <img src="static/images/ads-8.png" alt="ads">
-                            </div>
-                            <div class="ads_card_content">
-                                <div class="meta d-flex justify-content-between">
-                                    <p>Ram & Laptop</p>
-                                    <a class="like" href="#"><i class="fas fa-heart"></i></a>
-                                </div>
-                                <h4 class="title"><a href="product-details.html">8 GB DDR4 Ram, 4th Gen</a></h4>
-                                <p><i class="far fa-map"></i>New York, USA</p>
-                                <div class="ads_price_date d-flex justify-content-between">
-                                    <span class="price">$299.00</span>
-                                    <span class="date">25 Jan, 2023</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-                <div class="published_btn">
-                    <a href="product.html" class="main-btn">View all Ads</a>
+
                 </div>
             </div>
-        </div>
     </section>
+    <br><br>
 
     <!--====== CONTACT PART ENDS ======-->
 

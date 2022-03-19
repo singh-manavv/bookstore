@@ -99,7 +99,7 @@ def categories(request):
 
 def upload_book(request):
     if request.method == "POST":
-        Books.objects.create(
+        Book.objects.create(
             book_name = request.POST['book_name'],
             book_image = request.POST['book_image'],
             category_id = request.POST['category_id'],
@@ -107,18 +107,13 @@ def upload_book(request):
             book_price = request.POST['book_price'],
             publisher = request.POST['publisher']
         )
-        return render(request,'upload_book.html')
+        msg = "Book Upload Successfully...."
+        return render(request,'upload_book.html',{'msg':msg})
     else:
         return render(request,'upload_book.html')
 
 def managebooks(request):
-    try:
-        publishedBooks = Books.objects.all()
-        books = {
-            "allbooks": publishedBooks
-           
-        }
+    book_seller=User.objects.get(email=request.session['email'])
+    books=Book.objects.filter(book_seller=book_seller)
         
-        return render(request,'managebooks.html', books)
-    except: 
-        return render(request,'managebooks.html')
+    return render(request,'managebooks.html',{'books':books})
