@@ -64,19 +64,19 @@
             {% csrf_token %}
             <div class="published_wrapper">
                 <div class="row">
-                    {% for in books %}
+                    {% for i in books %}
                     <div class="col-lg-3 col-sm-6">
                         <div class="single_ads_card mt-30">
                             <div class="ads_card_image">
-                                <img src="{{ i.book_image }}" alt="ads">
+                                <img src="{{ i.book_image.url }}" alt="ads">
                             </div>
                             <div class="ads_card_content">
                                 <div class="meta d-flex justify-content-between">
-                                    <p>Ram & Laptop</p>
+                                    <p>{{i.book_category}}</p>
                                     <a class="like" href="#"><i class="fas fa-heart"></i></a>
                                 </div>
-                                <h4 class="title"><a href="product-details.html">Bike</a></h4>
-                                <p><i class="far fa-map"></i>New York, USA</p>
+                                <h4 class="title"><a href="product-details.html">{{i.book_name}}</a></h4>
+                                <p><i class="far fa-map"></i>{{i.book_description}}</p>
                                 <div class="ads_price_date d-flex justify-content-between">
                                     <span class="price">{{ i.book_price }}</span>
                                     <span class="date">25 Jan, 2023</span>

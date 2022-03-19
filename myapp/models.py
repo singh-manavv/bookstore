@@ -8,7 +8,6 @@ from django.db import models
 
 # Create your models here.
 
-
 class Contact(models.Model):
     name = models.CharField(max_length=100)
     email = models.CharField(max_length=100)
@@ -29,6 +28,7 @@ class User(models.Model):
     address = models.TextField()
     usertype = models.CharField(max_length=100,default="user")
 
+
     def __str__(self):
         return self.fname+" - "+self.usertype
 
@@ -37,7 +37,7 @@ class Category(models.Model):
     category_name = models.CharField(max_length=100)
 
 class Book(models.Model):
-    book_seller = models.ForeignKey(User,on_delete=models.CASCADE)
+    book_seller = models.ForeignKey(User,default=1,on_delete=models.CASCADE)
     bookid = models.AutoField(primary_key=True)
     book_name = models.CharField(max_length=100)
     book_image = models.ImageField(upload_to='image/')
@@ -52,4 +52,6 @@ class Book(models.Model):
         return self.book_name+" - "+self.publisher
 
 
+
     
+
