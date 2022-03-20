@@ -35,6 +35,9 @@ class User(models.Model):
 class Category(models.Model):
     category_id = models.IntegerField(primary_key=True)
     category_name = models.CharField(max_length=100)
+    
+    def __str__(self):
+        return self.category_name
 
 class Book(models.Model):
     book_seller = models.ForeignKey(User,default=1,on_delete=models.CASCADE)
